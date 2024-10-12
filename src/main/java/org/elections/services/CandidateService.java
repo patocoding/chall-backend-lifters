@@ -1,6 +1,7 @@
 package org.elections.services;
 import org.elections.dtos.CandidateReportDTO;
 import org.elections.models.Candidate;
+import org.elections.models.Position;
 import org.elections.repositories.*;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +16,17 @@ public class CandidateService {
     public CandidateService(CandidateRepository candidateRepository, VoteRepository voteRepository) {
         this.candidateRepository = candidateRepository;
         this.voteRepository = voteRepository;
+    }
+
+    public List<Candidate> getAll() {
+        return candidateRepository.findAll();
+    }
+
+    public Candidate createCandidate(String name) {
+
+        Candidate candidate  = new Candidate();
+        candidate.setName(name);
+        return candidateRepository.save(candidate);
     }
 
     public List<CandidateReportDTO> getCandidatesReport() {

@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b440d2-4e68-4255-acc0-452a1559ed8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/elections/dtos/CandidateReportDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/elections/dtos/ReportDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/elections/services/PositionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/elections/services/VoteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/elections/services/VoterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/elections/controllers/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/elections/controllers/PositionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/models/Candidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/models/Candidate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/controllers/CandidateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/controllers/CandidateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/models/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/models/Position.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/services/CandidateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/services/CandidateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/services/PositionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/services/PositionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,27 +41,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.ElectionsApplication.executor": "Run",
-    "git-widget-placeholder": "develop",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ElectionsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\cayoz\OneDrive\Área de Trabalho\projetos\elections\src\main\resources" />
+      <recent name="C:\Users\cayoz\OneDrive\Área de Trabalho\projetos\elections\src\main\java" />
+      <recent name="C:\Users\cayoz\OneDrive\Área de Trabalho\projetos\elections\src\main\java\org\elections" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="ElectionsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="elections" />
@@ -88,7 +96,9 @@
       <updated>1728690195830</updated>
       <workItem from="1728690196913" duration="3545000" />
       <workItem from="1728693927254" duration="2265000" />
-      <workItem from="1728744974730" duration="8807000" />
+      <workItem from="1728744974730" duration="12564000" />
+      <workItem from="1728761225988" duration="898000" />
+      <workItem from="1728762141435" duration="1202000" />
     </task>
     <servers />
   </component>
