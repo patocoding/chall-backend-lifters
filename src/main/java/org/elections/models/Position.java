@@ -14,4 +14,12 @@ public class Position {
     @OneToMany(mappedBy = "position")
     private Set<Candidate> candidates = new HashSet<>();
 
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
