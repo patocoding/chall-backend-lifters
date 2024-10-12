@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
+@Table(name = "positions")
 public class Position {
     @Getter
     @Id
@@ -20,5 +21,5 @@ public class Position {
     @OneToMany(mappedBy = "position")
     private Set<Candidate> candidates = new HashSet<>();
 
-
+    public Position () {}
 }

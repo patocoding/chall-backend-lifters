@@ -1,10 +1,14 @@
 package org.elections.controllers;
 
 import org.elections.models.Position;
+import org.elections.repositories.PositionRepository;
 import org.elections.services.PositionService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.sql.DataSource;
+import java.sql.SQLException;
 import java.util.List;
 
 @RestController
@@ -12,9 +16,12 @@ import java.util.List;
 public class PositionController {
 
     private final PositionService positionService;
-
-    public PositionController(PositionService positionService) {
+    private final PositionRepository positionRepository;
+    private final DataSource dataSource;
+    public PositionController(PositionService positionService, PositionRepository positionRepository, DataSource dataSource) {
         this.positionService = positionService;
+        this.positionRepository = positionRepository;
+        this.dataSource = dataSource;
     }
 
 

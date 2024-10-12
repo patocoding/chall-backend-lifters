@@ -2,6 +2,7 @@ package org.elections.models;
 import jakarta.persistence.*;
 
 @Entity
+@Table(name = "votes")
 public class Vote {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,4 +14,5 @@ public class Vote {
     @ManyToOne
     private Voter voter;
 
+    public Vote() {}
 }

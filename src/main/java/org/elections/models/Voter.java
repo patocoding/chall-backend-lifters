@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
+@Table(name = "voters")
 public class Voter {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,4 +17,5 @@ public class Voter {
     @OneToMany(mappedBy = "voter")
     private Set<Vote> votes = new HashSet<>();
 
+    public Voter() {}
 }
