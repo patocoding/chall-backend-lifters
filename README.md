@@ -2,6 +2,8 @@
 
 Este projeto é uma API RESTful para gerenciar candidatos, eleitores e realizar votações. A API permite CRUD (criação, leitura, atualização e exclusão) de candidatos, eleitores e cargos. Além disso, é possível registrar votos e obter relatórios de votação com base nos cargos.
 
+**Link Apresentação do Projeto (YOUTUBE): https://youtu.be/Nm042HlqNIA**
+
 ## Funcionalidades
 
 - **CRUD para Candidatos**: Gerenciamento candidatos através dos endpoints da API.
