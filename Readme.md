@@ -1,4 +1,4 @@
-# Projeto de API de Votação
+# Desafio Backend Junior Lifters
 
 Este projeto é uma API RESTful para gerenciar candidatos, eleitores e realizar votações. A API permite CRUD (criação, leitura, atualização e exclusão) de candidatos, eleitores e cargos. Além disso, é possível registrar votos e obter relatórios de votação com base nos cargos.
 
