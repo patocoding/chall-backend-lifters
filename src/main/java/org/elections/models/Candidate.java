@@ -1,6 +1,9 @@
 package org.elections.models;
 import java.util.Set;
 import java.util.HashSet;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -24,6 +27,8 @@ public class Candidate {
     @Setter
     @Getter
     @OneToMany(mappedBy = "candidate")
+    @JsonIgnore
+    @JsonManagedReference
     private Set<Vote> votes = new HashSet<>();
 
     public Candidate() {}

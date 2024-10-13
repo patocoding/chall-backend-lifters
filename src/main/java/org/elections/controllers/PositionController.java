@@ -16,12 +16,9 @@ import java.util.List;
 public class PositionController {
 
     private final PositionService positionService;
-    private final PositionRepository positionRepository;
-    private final DataSource dataSource;
+
     public PositionController(PositionService positionService, PositionRepository positionRepository, DataSource dataSource) {
         this.positionService = positionService;
-        this.positionRepository = positionRepository;
-        this.dataSource = dataSource;
     }
 
 

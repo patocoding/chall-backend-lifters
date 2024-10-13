@@ -1,20 +1,22 @@
 package org.elections.dtos;
 
-import lombok.Data;
 
-@Data
+import lombok.Getter;
+
+@Getter
 public class CandidateReportDTO {
-    private Long positionId;
-    private String positionName;
-    private long voteCount;
-    private Long candidateId;
-    private String candidateName;
+    private Long idCargo;
+    private String nomeCargo;
+    private Long votos;
+    private Long idCandidatoVencedor;
+    private String nomeCandidatoVencedor;
 
-    public CandidateReportDTO(Long positionId, String positionName, long voteCount, Long candidateId, String candidateName) {
-        this.positionId = positionId;
-        this.positionName = positionName;
-        this.voteCount = voteCount;
-        this.candidateId = candidateId;
-        this.candidateName = candidateName;
+    public CandidateReportDTO(Long idCargo, String nomeCargo, Long votos, Long idCandidatoVencedor, String nomeCandidatoVencedor) {
+        this.idCargo = idCargo;
+        this.nomeCargo = nomeCargo;
+        this.votos = votos;
+        this.idCandidatoVencedor = idCandidatoVencedor;
+        this.nomeCandidatoVencedor = nomeCandidatoVencedor;
     }
+
 }

@@ -1,4 +1,6 @@
 databaseChangeLog:
+  - include:
+        file: db/changelog/002-add-document-not-null-constraint.xml
   - changeSet:
       id: 1
       author: user

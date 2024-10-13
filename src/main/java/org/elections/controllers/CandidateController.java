@@ -1,5 +1,6 @@
 package org.elections.controllers;
 
+import org.elections.dtos.CandidateReportDTO;
 import org.elections.models.Candidate;
 import org.elections.services.CandidateService;
 import org.springframework.http.ResponseEntity;
@@ -28,6 +29,7 @@ public class CandidateController {
         return ResponseEntity.ok(candidates);
     }
 
+
     @GetMapping("/{id}")
     public ResponseEntity<Candidate> getCandidateById(@PathVariable Long id) {
         Candidate candidate = candidateService.findById(id);
@@ -44,5 +46,11 @@ public class CandidateController {
     public ResponseEntity<Void> deleteCandidate(@PathVariable Long id) {
         candidateService.deleteCandidate(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/report")
+    public ResponseEntity<List<CandidateReportDTO>> getCandidatesReport() {
+        List<CandidateReportDTO> report = candidateService.getCandidatesReport();
+        return ResponseEntity.ok(report);
     }
 }

@@ -5,15 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b440d2-4e68-4255-acc0-452a1559ed8a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/elections/controllers/VoteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/elections/controllers/VoterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/001-add-voter-document-column.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/002-add-document-not-null-constraint.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/controllers/CandidateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/controllers/CandidateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/controllers/PositionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/controllers/PositionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/dtos/CandidateReportDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/dtos/CandidateReportDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/dtos/ReportDTO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/models/Candidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/models/Candidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/models/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/models/Position.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/models/Vote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/models/Vote.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/models/Voter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/models/Voter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/repositories/CandidateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/repositories/CandidateRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/repositories/VoteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/repositories/VoteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/repositories/VoterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/repositories/VoterRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/services/CandidateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/services/CandidateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/services/VoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/services/VoteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/services/VoterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/services/VoterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +58,7 @@
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ElectionsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ElectionsApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -57,6 +69,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalResources&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -96,7 +109,10 @@
       <workItem from="1728693927254" duration="2265000" />
       <workItem from="1728744974730" duration="12564000" />
       <workItem from="1728761225988" duration="898000" />
-      <workItem from="1728762141435" duration="6253000" />
+      <workItem from="1728762141435" duration="8088000" />
+      <workItem from="1728783532465" duration="1428000" />
+      <workItem from="1728784998051" duration="4843000" />
+      <workItem from="1728836360996" duration="3676000" />
     </task>
     <servers />
   </component>
@@ -113,5 +129,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
