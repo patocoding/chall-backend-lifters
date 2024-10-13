@@ -58,7 +58,7 @@ spring.liquibase.change-log=classpath:/db/changelog/db.changelog-master.yaml
 1. **Clone o Repositório**
    ```bash
    git clone https://github.com/patocoding/chall-backend-lifters.git
-   cd projeto-votacao
+   cd elections
    ```
 
 2. **Configure o Postgre**
