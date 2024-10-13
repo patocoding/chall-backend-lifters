@@ -5,27 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b440d2-4e68-4255-acc0-452a1559ed8a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/elections/controllers/VoteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/elections/controllers/VoterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/001-add-voter-document-column.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/002-add-document-not-null-constraint.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/elections/dtos/ResultDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/controllers/CandidateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/controllers/CandidateController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/controllers/PositionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/controllers/PositionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/dtos/CandidateReportDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/dtos/CandidateReportDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/dtos/ReportDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/models/Candidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/models/Candidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/models/Vote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/models/Vote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/models/Voter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/models/Voter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/repositories/CandidateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/repositories/CandidateRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/repositories/VoteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/repositories/VoteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/repositories/VoterRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/repositories/VoterRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/services/CandidateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/services/CandidateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/controllers/VoteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/controllers/VoteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/controllers/VoterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/controllers/VoterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/services/PositionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/services/PositionService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/services/VoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/services/VoteService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/elections/services/VoterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/elections/services/VoterService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/changelog/001-add-voter-document-column.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/changelog/001-add-voter-document-column.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +101,7 @@
       <workItem from="1728762141435" duration="8088000" />
       <workItem from="1728783532465" duration="1428000" />
       <workItem from="1728784998051" duration="4843000" />
-      <workItem from="1728836360996" duration="3676000" />
+      <workItem from="1728836360996" duration="6540000" />
     </task>
     <servers />
   </component>

@@ -1,10 +1,12 @@
 package org.elections.controllers;
 
+import org.elections.dtos.ResultDTO;
 import org.elections.models.Voter;
 import org.elections.services.VoterService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.xml.transform.Result;
 import java.util.List;
 
 @RestController
@@ -18,9 +20,10 @@ public class VoterController {
     }
 
     @PostMapping
-    public ResponseEntity<Voter> createVoter(@RequestBody Voter voter) {
+    public ResponseEntity<ResultDTO<Voter>> createVoter(@RequestBody Voter voter) {
         Voter createdVoter = voterService.createVoter(voter.getName(), voter.getDocument());
-        return ResponseEntity.ok(createdVoter);
+        ResultDTO<Voter> resultDTO = new ResultDTO<Voter>("Eleitor criado com sucesso",createdVoter);
+        return ResponseEntity.ok(resultDTO);
     }
 
     @GetMapping

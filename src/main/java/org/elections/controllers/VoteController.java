@@ -1,4 +1,5 @@
 package org.elections.controllers;
+import org.elections.dtos.ResultDTO;
 import org.elections.models.Vote;
 import org.elections.services.VoteService;
 import org.springframework.http.HttpStatus;
@@ -19,7 +20,7 @@ public class VoteController {
     }
 
     @PostMapping("/{id}/vote")
-    public ResponseEntity<Vote> castVote(@PathVariable Long id, @RequestBody Map<String, Long> requestBody) {
+    public ResponseEntity<ResultDTO<Vote>> castVote(@PathVariable Long id, @RequestBody Map<String, Long> requestBody) {
         Long candidateId = requestBody.get("candidateId");
         if (candidateId == null) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Informe o ID do candidato");
@@ -27,7 +28,8 @@ public class VoteController {
 
         try {
             Vote vote = voteService.vote(id, candidateId);
-            return ResponseEntity.ok(vote);
+            ResultDTO<Vote> resultDTO = new ResultDTO<>("Voto computado com sucesso", vote);
+            return ResponseEntity.ok(resultDTO);
         } catch (RuntimeException e) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, e.getMessage());
         }

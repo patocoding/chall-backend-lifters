@@ -34,6 +34,21 @@ public class PositionService {
                 .orElseThrow(() -> new IllegalStateException("Cargo não encontrado"));
     }
 
+    public Position updatePosition(Long id, String newName) {
+        
+        Position position = positionRepository.findById(id)
+                .orElseThrow(() -> new IllegalStateException("Cargo não encontrado: " + id));
+
+
+        if (positionRepository.existsByName(newName)) {
+            throw new IllegalStateException("Já existe um cargo com esse nome: " + newName);
+        }
+
+
+        position.setName(newName);
+        return positionRepository.save(position);
+    }
+
     public void deletePosition(Long id) {
         positionRepository.deleteById(id);
     }

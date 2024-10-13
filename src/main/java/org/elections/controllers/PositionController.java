@@ -1,5 +1,6 @@
 package org.elections.controllers;
 
+import org.elections.dtos.ResultDTO;
 import org.elections.models.Position;
 import org.elections.repositories.PositionRepository;
 import org.elections.services.PositionService;
@@ -23,9 +24,10 @@ public class PositionController {
 
 
     @PostMapping
-    public ResponseEntity<Position> createPosition(@RequestBody Position position) {
+    public ResponseEntity<ResultDTO<Position>> createPosition(@RequestBody Position position) {
         Position createdPosition = positionService.createPosition(position.getName());
-        return ResponseEntity.ok(createdPosition);
+        ResultDTO<Position> resultDTO = new ResultDTO<>("Cargo criado com sucesso", createdPosition);
+        return ResponseEntity.ok(resultDTO);
     }
 
     @GetMapping
@@ -38,6 +40,12 @@ public class PositionController {
     public ResponseEntity<Position> getPositionById(@PathVariable Long id) {
         Position position = positionService.findById(id);
         return ResponseEntity.ok(position);
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Position> updatePosition(@PathVariable Long id, @RequestBody Position position) {
+        Position updatedPosition = positionService.updatePosition(id, position.getName());
+        return ResponseEntity.ok(updatedPosition);
     }
 
     @DeleteMapping("/{id}")
