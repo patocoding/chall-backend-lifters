@@ -111,6 +111,14 @@ spring.liquibase.change-log=classpath:/db/changelog/db.changelog-master.yaml
 - Otimização de consultas com cache.
 - Implementar filas para lidar com grandes volumes de votos simultâneos.
 
+### Referências
+
+- Liquibase: https://www.baeldung.com/liquibase-refactor-schema-of-java-app / https://www.youtube.com/watch?v=WXsQbeBYRN0&t=223s
+- Spring Data JPA: https://docs.spring.io/spring-data/jpa/reference/index.html / https://www.youtube.com/watch?v=v1IFQWzuSrw&t=640s
+- Database config : https://www.enterprisedb.com/postgres-tutorials/how-add-postgresql-driver-dependency-maven
+- Lombok: https://www.baeldung.com/intro-to-project-lombok
+- Spring Boot: https://docs.spring.io/spring-boot/index.html
+
 ```
 madeBy: {
 name: "Cayo Alves",
